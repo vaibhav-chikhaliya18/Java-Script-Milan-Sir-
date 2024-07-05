@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Lec 1</title>
+
+</head>
+<body>
+
+    <h1 id="name"></h1>
+    <h1 id="email"></h1>
+    <h2 id="age"></h2>
+    <h2 id="sub"></h2>
+    <h2 id="country"></h2>
+    <script>
+
+        var obj= {
+            Name : "Vaibhav",
+            Email : "vaibhav@gmail.com",
+            Age : 19,
+            Sub : "Full Stack Dev.",
+            Country : {
+                Country : "India",
+                City : "Surat",
+            }
+        }
+        document.getElementById('name').innerHTML=obj.Name;
+        document.getElementById('email').innerHTML=obj.Email;
+        document.getElementById('age').innerHTML=obj.Age;
+        document.getElementById('sub').innerHTML=obj.Sub;
+        document.getElementById('country').innerHTML=obj.Country;
+    </script>
+
+
+</body>
+</html>

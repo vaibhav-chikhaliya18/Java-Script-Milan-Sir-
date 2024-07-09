@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P6 - Input The Subject Marks</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+    var Physics = parseInt(prompt("Enter a Physics mark :-"));
+    var Chemistry = parseInt(prompt("Enter a Chemistry mark :-"));
+    var Biology = parseInt(prompt("Enter a Biology mark :-"));
+    var Mathematics  = parseInt(prompt("Enter a Mathematics  mark :-"));
+    var Computer = parseInt(prompt("Enter a Computer mark :-"));
+
+    var totalMarks = Physics + Chemistry + Biology + Mathematics + Computer;
+    var percentage = (totalMarks / 500) * 100;
+
+    if( percentage >= 90 ){
+        document.write("<h1>Grade A</h1>");
+    }
+    else if(percentage >= 80 ){
+        document.write("<h1>Grade B</h1>");
+    }
+    else if(percentage >= 70 ){
+        document.write("<h1>Grade C</h1>");
+    }
+    else if(percentage >= 60){
+        document.write("<h1>Grade D</h1>");
+    }
+    else if(percentage >= 50){
+        document.write("<h1>Grade D</h1>");
+    }
+    else if(percentage >= 40){
+        document.write("<h1>Grade D</h1>");
+    }
+    else{
+        document.write("<h1>fail</h1>");
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

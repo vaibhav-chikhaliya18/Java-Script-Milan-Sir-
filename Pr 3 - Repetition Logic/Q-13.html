@@ -1,0 +1,16 @@
+<script type="text/javascript">
+
+      // 13.Write javascript program print out Fibonacci series. (0,1,1,2,3,5,8…)
+
+        var n=parseInt(prompt("Enter a value"));
+        var first=0;
+        var second=1;
+        var third;
+
+        for(var i=1;i<=n;i++){
+            document.write(`<h1>${first}</h1>`);
+            third = first + second;
+            first = second;
+            second =third;  
+        }
+</script>

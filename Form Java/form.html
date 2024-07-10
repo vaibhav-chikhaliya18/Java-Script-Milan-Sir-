@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Html</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>First Name:-</td>
+                <td> <input type="text" id="name" ></td>
+            </tr>
+            <tr>
+                <td>Phone:-</td>
+                <td> <input type="number" id="phone"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" onclick="saveRecord()" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script type="text/javascript">
+        function SaveRecord(){
+            let name=document.getElementById('name').value;
+            let phone=document.getElementById('phone').value;
+
+            if(!name){
+                alert("Name Is Reqiured");
+                return false;
+            }
+            if(!phone){
+                alert("Phone Is Reqiured");
+                return false;
+            }
+            console.log("Done");
+        }
+    </script>
+
+</body>
+</html>

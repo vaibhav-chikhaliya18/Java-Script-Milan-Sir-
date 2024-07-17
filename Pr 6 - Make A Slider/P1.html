@@ -1,0 +1,119 @@
+<h2 align="center"> department wise filter record</h2>
+<table border="1" align="center" cellspacing="0" cellpadding="10" id="table"> 
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>City</th>
+        <th>Dep</th>
+        <th>Degi</th>
+        <th>Salary</th>
+    </thead>
+    <tbody id="record" align="center"></tbody>
+</table>
+
+<script type="text/javascript">
+    document.getElementById('table')
+    table.style.background='#FFA07A	'
+
+let record = [
+        {
+            id : 1,
+            name : "ashish",
+            email : "ashu@gmail.com",
+            phone : "1121212",
+            city : "surat",
+            salary : 20000,
+            degi : "senior",
+            dep : "programming",
+        },
+        {
+            id : 2,
+            name : "hari",
+            email : "hari@gmail.com",
+            phone : "5454545",
+            city : "surat",
+            salary : 22000,
+            degi : "junior",
+            dep : "ui/ux",
+        },
+        {
+            id : 3,
+            name : "raj",
+            email : "raj@gmail.com",
+            phone : "454545",
+            city : "vadodara",
+            salary : 25000,
+            degi : "junior",
+            dep : "bde",
+        },
+        {
+            id : 4,
+            name : "deep",
+            email : "deep@gmail.com",
+            phone : "565656",
+            city : "vapi",
+            salary : 30000,
+            degi : "tl",
+            dep : "webdesign",
+        },
+        {
+            id : 5,
+            name : "jay",
+            email : "jay@gmail.com",
+            phone : "5565656",
+            city : "rajkot",
+            salary : 20000,
+            degi : "senior",
+            dep : "programming",
+        },
+        {
+            id : 6,
+            name : "ajay",
+            email : "ajay@gmail.com",
+            phone : "5565656",
+            city : "vapi",
+            salary : 25000,
+            degi : "manager",
+            dep : "ui/ux",
+        }
+   ]
+
+   var tbl="";
+   var sum=0;
+   var ans=record.filter((val)=>{
+   if(val.dep == 'programming'){
+    sum=sum+parseInt(val.salary)
+    return(
+
+        tbl +=     `
+            <tr>
+            <td>${val.id}</td>
+            <td>${val.name}</td>
+            <td>${val.email}</td>
+            <td>${val.phone}</td>
+            <td>${val.city}</td>
+            <td>${val.dep}</td>
+            <td>${val.degi}</td>
+            <td>${val.salary}</td>
+            </tr>
+        `)
+
+   }
+   });
+
+    tbl += 
+   `
+    <tr>
+        <td colspan="7">Total</td>
+        <td id="sum">1</td>
+        </tr>
+   `
+
+   document.getElementById('record').innerHTML=tbl;
+   document.getElementById('sum').innerHTML=sum;
+
+
+
+</script>

@@ -1,0 +1,65 @@
+<script type="text/javascript">
+
+    class bank
+    {
+        constructor(id,password,name,balance){
+            this.id=id;
+            this.password=password;
+            this.name=name;
+            this.balance=balance;
+        }
+        withdrawn(amt){
+            if(this.id == ac && this.password == pass){
+                if(this.balance > amt){
+                    this.balance=this.balance-amt
+                    console.log(`Name : ${this.name}`);
+                    console.log(`Balance : ${this.balance}`);
+                }
+                else{
+                    console.log("Insufficient balance");
+                }
+            }else{
+                console.log("please valid details...");
+            }
+        }
+    
+        Deposited(amt){
+            if(amt > 0){
+                this.balance=this.balance+amt
+            console.log(`Name : ${this.name}`);
+            console.log(`Balance : ${this.balance}`);
+            }
+            else{
+                console.log(`please 1 rupee Deposited`);
+            }
+        }
+    
+        getDetails(){
+            console.log(`Name : ${this.name}`);
+            console.log(`Balance : ${this.balance}`);
+        }
+    }
+    let s1 = new bank(111,"abc","jack",500);
+    let ac=parseInt(prompt("Enter Account Number :-"));
+    let pass=(prompt("Enter Account Password :-"));
+    
+        console.log("press 1 for withdrawn");
+        console.log("press 2 for Deposited");
+        console.log("press 3 for getDetails");
+        let ch=parseInt(prompt("Enter your choice"));
+    
+        if(ch == 1){
+            let w=parseInt(prompt("Enter Withdrawn amount :-"));
+            s1.withdrawn(w);
+        }
+        else if(ch == 2){
+            let d=parseInt(prompt("Enter Deposited amount :-"));
+            s1.Deposited(d);
+        }
+        else if(ch == 3){
+            s1.getDetails();
+        }
+        else{
+            console.log("Invalid Choice....");
+        }
+    </script>

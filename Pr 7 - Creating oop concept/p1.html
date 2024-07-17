@@ -1,0 +1,26 @@
+<script type="text/javascript">
+
+    class person
+    {
+        constructor(name,age,country){
+            this.name=name;
+            this.age=age;
+            this.country=country;
+        }
+        display(){
+            console.log(`Name : ${this.name}`);
+            console.log(`Age : ${this.age}`);
+            console.log(`Country : ${this.country}`);
+        }
+    }
+    
+    let person1= new person("Ram",18,"IND");
+    let person2= new person("Jack",24,"USA");
+    
+    console.log("Person 1 Detail");
+    person1.display();
+    
+    console.log("Person 2 Detail");
+    person2.display();
+    
+    </script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Elements In Array Position</title>
+</head>
+<body>
+    
+    <script>
+        var arr = [98, 97, 96, 95, 94, 93, 92, 91, 90];
+    posi = 6;
+    for (var i = posi; i < arr.length - 1; i++) {
+        arr[i] = arr[i + 1];
+    }
+    arr.pop();
+    console.log(arr);
+    </script>
+
+</body>
+</html>

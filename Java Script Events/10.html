@@ -1,0 +1,14 @@
+<select id="city" onchange="data()">
+    <option>---select city---</option>
+    <option>Surat</option>
+    <option>vadodra</option>
+    <option>Rajkot</option>
+    <option>Ahemdabad</option>
+    </select>
+    <h3 id="ans"></h3>
+    <script type="text/javascript">
+    let data = () => {
+    let city = document.getElementById('city').value;
+    document.getElementById('ans').innerHTML = "Select city :- "+city;
+    }
+    </script>

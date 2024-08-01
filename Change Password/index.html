@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+</head>
+
+<body>
+    <h3 id="email"></h3>
+    <h4 id="password"></h4>
+
+    <script>
+        let email = "xyz@gmail.com";
+        let password = "xyz_123";
+
+        let useremail = prompt("Your Old Email :- ");
+
+        if (useremail == email) {
+            let newPassword = prompt("Enter Your New Password :- ");
+            email = useremail;
+            password = newPassword;
+        }
+        else {
+            alert("Please Enter Valid Email..!");
+        }
+
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("password").innerHTML = password;
+    </script>
+
+
+</body>
+
+</html>

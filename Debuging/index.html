@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging</title>
+</head>
+<body>
+    <center>
+        <table cellspacing="5" cellpadding="5" border="1">
+            <tr>
+                <td>Name :- </td>
+                <td>
+                    <input type="text" name="" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Phone :- </td>
+                <td>
+                    <input type="tel:" name="" id="phone">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="saveRecord()">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+        function saveRecord(){
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+
+            if(!name){
+                alert("Name is required...!");
+                return false;
+            }
+            if(!phone){
+                alert("Phone Number is required..!");
+                return false;
+            }
+
+            console.log(name);
+            console.log(phone);
+        }
+    </script>
+</body>
+</html>

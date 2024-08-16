@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter negative</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, -2, 3, -4, 5, -6];
+        console.log(arr);
+
+        function Negative(element) {
+            return element < 0;
+        }
+
+        var negativeElements = arr.filter(Negative);
+
+        console.log("Negative elements:", negativeElements);
+    </script>
+</body>
+
+</html>
